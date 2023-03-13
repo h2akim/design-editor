@@ -43,6 +43,6 @@ const _w = computed(() => {
 <template>
     <VueDragReSizeRotate :rotatable="props.rotatable" :parent="true" :w="_w" :h="_h" :x="props.x" :y="props.y" :min-height="10" :min-width="10">
         <div v-if="props.elementType == ElementType.TEXT" contenteditable="true" class="outline-none font-bold text-lg text-red-500">xxx</div>
-        <div v-if="props.elementType == ElementType.RECTANGLE" class="border h-full w-full"></div>
+        <div v-if="props.elementType == ElementType.RECTANGLE" class="border bg-white h-full w-full"></div>
     </VueDragReSizeRotate>
 </template>
