@@ -36,8 +36,8 @@ const resetTool = () => {
 const clickEvent = (e: MouseEvent) => {
     if (! isEmpty(activeTool)
         && activeTool.value != ElementType.NO_TOOL) {
-        const clickPositionX = e.layerX
-        const clickPositionY = e.layerY
+        const clickPositionX = e.offsetX
+        const clickPositionY = e.offsetY
         elements.value.push({
             elementType: activeTool.value,
             rotatable: true,
